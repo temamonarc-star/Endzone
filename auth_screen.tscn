@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://tv0e44flus2k"]
+
+[ext_resource type="Script" uid="uid://dx5g1swfio4dw" path="res://auth_screen.gd" id="1_vf33x"]
+
+[node name="AuthScreen" type="Control" unique_id=152306029]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vf33x")
