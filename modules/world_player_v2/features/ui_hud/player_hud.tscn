@@ -172,6 +172,8 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="MenuBackground" type="ColorRect" parent="GameMenu" unique_id=1560707201]
 layout_mode = 1
@@ -182,7 +184,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0.5)
 
-[node name="CenterContainer" type="CenterContainer" parent="GameMenu"]
+[node name="CenterContainer" type="CenterContainer" parent="GameMenu" unique_id=1962141067]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -191,17 +193,17 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="SettingsHBox" type="HBoxContainer" parent="GameMenu/CenterContainer"]
+[node name="SettingsHBox" type="HBoxContainer" parent="GameMenu/CenterContainer" unique_id=386146581]
 custom_minimum_size = Vector2(600, 0)
 layout_mode = 2
 theme_override_constants/separation = 50
 
-[node name="GameplayPanel" type="VBoxContainer" parent="GameMenu/CenterContainer/SettingsHBox"]
+[node name="GameplayPanel" type="VBoxContainer" parent="GameMenu/CenterContainer/SettingsHBox" unique_id=1671367292]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/separation = 10
 
-[node name="GameplayLabel" type="Label" parent="GameMenu/CenterContainer/SettingsHBox/GameplayPanel"]
+[node name="GameplayLabel" type="Label" parent="GameMenu/CenterContainer/SettingsHBox/GameplayPanel" unique_id=2111530909]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
 text = "Gameplay Settings"
@@ -225,7 +227,7 @@ layout_mode = 2
 button_pressed = true
 text = "Pistol Red Markers"
 
-[node name="HSeparator" type="HSeparator" parent="GameMenu/CenterContainer/SettingsHBox/GameplayPanel"]
+[node name="HSeparator" type="HSeparator" parent="GameMenu/CenterContainer/SettingsHBox/GameplayPanel" unique_id=1383912824]
 layout_mode = 2
 
 [node name="MiningRadiusLabel" type="Label" parent="GameMenu/CenterContainer/SettingsHBox/GameplayPanel" unique_id=680204721]
@@ -239,12 +241,12 @@ max_value = 3.0
 step = 0.1
 value = 1.0
 
-[node name="DebugPanel" type="VBoxContainer" parent="GameMenu/CenterContainer/SettingsHBox"]
+[node name="DebugPanel" type="VBoxContainer" parent="GameMenu/CenterContainer/SettingsHBox" unique_id=343820193]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/separation = 10
 
-[node name="DebugLabel" type="Label" parent="GameMenu/CenterContainer/SettingsHBox/DebugPanel"]
+[node name="DebugLabel" type="Label" parent="GameMenu/CenterContainer/SettingsHBox/DebugPanel" unique_id=730524906]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
 text = "Debug Settings"
@@ -269,7 +271,7 @@ text = "Show Chunk Bounds"
 layout_mode = 2
 text = "Show Road Zones"
 
-[node name="HSeparator" type="HSeparator" parent="GameMenu/CenterContainer/SettingsHBox/DebugPanel"]
+[node name="HSeparator" type="HSeparator" parent="GameMenu/CenterContainer/SettingsHBox/DebugPanel" unique_id=1436989293]
 layout_mode = 2
 
 [node name="SpawnEntityButton" type="Button" parent="GameMenu/CenterContainer/SettingsHBox/DebugPanel" unique_id=123456791]
@@ -287,7 +289,7 @@ custom_minimum_size = Vector2(0, 35)
 layout_mode = 2
 text = "Capture Prefab (Selection Mode)"
 
-[node name="ActionButtons" type="VBoxContainer" parent="GameMenu"]
+[node name="ActionButtons" type="VBoxContainer" parent="GameMenu" unique_id=1282005107]
 layout_mode = 0
 offset_left = 20.0
 offset_top = 20.0
@@ -312,11 +314,6 @@ custom_minimum_size = Vector2(200, 40)
 layout_mode = 2
 size_flags_horizontal = 3
 text = "QuickLoad (F8)"
-
-
-
-
-
 
 [node name="InventoryPanel" parent="." unique_id=212941941 instance=ExtResource("2_inv")]
 
